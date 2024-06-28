@@ -6,7 +6,7 @@ Bu uygulama, kullanıcıların izledikleri filmleri ekleyip listeleyebilecekleri
 
 - Kullanıcılar film başlığı, açıklaması ve türü ekleyebilir.
 - Eklenen filmler localStorage'de saklanır, böylece tarayıcı kapatılıp açıldığında veriler kaybolmaz.
-- Kullanıcılar ekledikleri filmleri listede görebilir.
+- Kullanıcılar ekledikleri filmleri listede görebilir ve isterlerse silebilirler.
   
 ## Kullanılan Teknolojiler
 
@@ -17,7 +17,9 @@ Bu uygulama, kullanıcıların izledikleri filmleri ekleyip listeleyebilecekleri
 ## Kurulum
 
 1. Projeyi bilgisayarınıza klonlayın:
-   git clone https://github.com/seydabozdag/Test-JS-.git
+   ```bash
+   git clone https://github.com/seydabozdag/Test-JS.git
+   cd Test-JS
    
 
    

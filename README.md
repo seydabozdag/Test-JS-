@@ -18,8 +18,12 @@ Bu uygulama, kullanıcıların izledikleri filmleri ekleyip listeleyebilecekleri
 
 1. Projeyi bilgisayarınıza klonlayın:
    ```bash
-   git clone https://github.com/seydabozdag/Test-JS.git
-   cd Test-JS
+   git clone https://github.com/seydabozdag/Test-JS-.git
+   cd Test-JS-
+2.  index.html dosyasını açarak uygulamayı görüntüleyebilirsiniz.
+  
+
+
    
 
    

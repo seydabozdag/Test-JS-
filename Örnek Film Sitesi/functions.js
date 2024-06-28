@@ -14,6 +14,7 @@ function addMovie(e) {
     }
 
     var movie = {
+        id: Date.now(), 
         title: title,
         description: description,
         genre: selectedGenre
@@ -34,13 +35,39 @@ function displayMovie(movie) {
     var movieList = document.getElementById('movie-list');
 
     var li = document.createElement('li');
+    li.setAttribute('data-id', movie.id); 
     li.innerHTML = `
         <strong>${movie.title}</strong>
         <p>${movie.description}</p>
         <span class="genre">${movie.genre}</span>
+        <button class="delete-btn" onclick="deleteMovie(${movie.id})">Sil</button>
     `;
     
     movieList.appendChild(li);
+}
+
+function deleteMovie(id) {
+    var movies = getMovies();
+    var updatedMovies = movies.filter(movie => movie.id !== id);
+    saveMovies(updatedMovies);
+    renderMovies(updatedMovies);
+}
+
+function renderMovies(movies) {
+    var movieList = document.getElementById('movie-list');
+    movieList.innerHTML = '';
+
+    movies.forEach(movie => {
+        var li = document.createElement('li');
+        li.setAttribute('data-id', movie.id);
+        li.innerHTML = `
+            <strong>${movie.title}</strong>
+            <p>${movie.description}</p>
+            <span class="genre">${movie.genre}</span>
+            <button class="delete-btn" onclick="deleteMovie(${movie.id})">Sil</button>
+        `;
+        movieList.appendChild(li);
+    });
 }
 
 var selectedGenre = ''; 
@@ -72,5 +99,5 @@ function saveMovies(movies) {
 
 function loadMovies() {
     var movies = getMovies();
-    movies.forEach(displayMovie);
+    renderMovies(movies);
 }

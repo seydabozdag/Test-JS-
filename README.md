@@ -6,7 +6,7 @@ Bu uygulama, kullanıcıların izledikleri filmleri ekleyip listeleyebilecekleri
 
 - Kullanıcılar film başlığı, açıklaması ve türü ekleyebilir.
 - Eklenen filmler localStorage'de saklanır, böylece tarayıcı kapatılıp açıldığında veriler kaybolmaz.
-- Kullanıcılar ekledikleri filmleri listede görebilir ve isterlerse silebilirler.
+- Kullanıcılar ekledikleri filmleri listede görebilir, isterlerse silebilirler ve 5 yıldız üzerinden değerlendirme yapabilirler.
   
 ## Kullanılan Teknolojiler
 

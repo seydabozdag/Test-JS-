@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film İzleme Listesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>İzlediğim Filmler</h1>
+        <form id="movie-form">
+            <input type="text" id="title" placeholder="Film Başlığı" required>
+            <textarea id="description" placeholder="Film Açıklaması" required></textarea>
+            <div class="genre-buttons">
+                <button type="button" class="genre-btn" onclick="selectGenre('Animasyon')">Animasyon</button>
+                <button type="button" class="genre-btn" onclick="selectGenre('Aksiyon')">Aksiyon</button>
+                <button type="button" class="genre-btn" onclick="selectGenre('Bilim-Kurgu')">Bilim-Kurgu</button>
+                <button type="button" class="genre-btn" onclick="selectGenre('Dram')">Dram</button>
+                <button type="button" class="genre-btn" onclick="selectGenre('Korku-Gerilim')">Korku-Gerilim</button>
+                <button type="button" class="genre-btn" onclick="selectGenre('Romantik')">Romantik</button>
+                <button type="button" class="genre-btn" onclick="selectGenre('Tarih')">Tarih</button>
+            </div>
+            <button type="submit">Filmi Ekle</button>
+        </form>
+        <ul id="movie-list"></ul>
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+</html>
